@@ -1,6 +1,6 @@
-#include "library.h"
+#include "kmbox.h"
 
-#include "kmboxNet.h"
+#include "kmboxNet/kmboxNet.h"
 
 int kmbox::init(char *ip, char *port, char *mac) {
     return kmNet_init(ip, port, mac);

@@ -3,12 +3,12 @@ project(Kmbox)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_library(Kmbox STATIC src/library.cpp
-        src/my_enc.h
-        src/kmboxNet.h
-        src/HidTable.h
-        src/my_enc.cpp
-        src/kmboxNet.cpp)
+add_library(Kmbox STATIC src/kmbox.cpp
+        src/kmboxNet/my_enc.h
+        src/kmboxNet/kmboxNet.h
+        src/kmboxNet/HidTable.h
+        src/kmboxNet/my_enc.cpp
+        src/kmboxNet/kmboxNet.cpp)
 
 target_include_directories(Kmbox
         PUBLIC
