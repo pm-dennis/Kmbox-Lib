@@ -16,13 +16,13 @@ target_include_directories(Kmbox
 )
 
 
-add_executable(Kmbox_test test/test.cpp)
+add_executable(Kmbox_example example/example.cpp)
 
-target_link_libraries(Kmbox_test
+target_link_libraries(Kmbox_example
         PRIVATE
         Kmbox
 )
 
 if(WIN32)
-    target_link_libraries(Kmbox_test PRIVATE ws2_32)
+    target_link_libraries(Kmbox_example PRIVATE ws2_32)
 endif()
